@@ -1,43 +1,60 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+</head>
 
- <meta charset="UTF-8">
- <title>To Do List</title>
+<link rel="stylesheet" href="Navbar.css" type="text/css" />
+ <ul id="navbar">
+        <li><a href="aboutme.html"> About Me </a></li>
+        <li><a href="hardware.html"> Hardware </a></li>
+        <li><a href="vind.html"> Vindinium</a></li>
+        <li><a href="bigproject.html"> Which Sport is Better? </a></li>
+        <li><a href="calculator.html"> Calculator </a></li>
+        <li><a href="todolist.html"> To Do List </a></li>
+        <li><a href="todocal.html"> How to do the Calculator</a></li>
+        <li><a href="howto.html"> How to do the Hardware Page </a></li>
+        <li><a href="howtoimagedrop.html"> Image Drop </a></li>
+  </ul>
 
 <style>
     body {
-      background-image: url(http://wallpapercave.com/wp/yhLByTe.jpg);
+      background-image: url("https://wallpaperscraft.com/image/cubes_light_texture_background_50406_300x168.jpg");
       background-size:1400px;
-      color:white;
+      color:black;
     }
 </style>
 
-<p>
-<a herf="https://preview.c9users.io/palomitas24/cs-portfolio2k16/aboutme.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">To Go Back to the Main Page Click Here</a>
-</p>
 
-<h2>Need to do a list in the hurry? Don't worry, we've got your back. Just type in the stuff you need to do, and cross it out
-later when you done. You're welcome.</h2>
+<body style="text-align:center">
+
+<h1>To Do List</h1>
+<p>Need A list to put what do you need to put? Don't worry, I have your back!</p>
+<p>Change the color of the words you want to be : red,blue, and yellow. You can even do a pattern!</p>
+<p>Need to delete a list you do need? Just click in the word and it disappears!</p>
+<p>Is the list long? Or Just want a fresh start again? Click on the Reset Button to clear everything on the list!</p>
 
 
- <div id ="myDiv" class="header">
-    <h2>To Do List</h2>
-    <input type="text" id="myInput" placeholder="Title...">
-    <span onclick="newElement()" class="addBtn">Add</span>
+
+<input id="textinput" type="text"><br>
+
+<input id="button1input" type="button" value="Submit">
+<input id="button2input" type="button" value="Reset">
+
+<select id="selectinput">
+    
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Yellow">Yellow</option>
+        
+</select>
+
+<h3>Things To Do</h3>
+<div id="display">
 </div>
-<ul id="myUL">
-    <li>Watch the NBA Playoffs</li>
-    <li class="checked">Ian Clark for MVP</li>
-    <li>Buy groceries at Costco</li>
-    <li>Visit family in Mexico</li>
-    <li>Go to SF, eat there</li>
-    <li>Play with my little brother</li>
-</ul>
- <link rel="stylesheet" href="todolist.css" type="text/css" />
 
-<script src="todolist.js"></script>
-
+<script type="text/javascript" src="todolist.js"></script>    
+    
 </body>
 </html>
-
