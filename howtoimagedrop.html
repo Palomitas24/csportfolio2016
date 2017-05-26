@@ -16,23 +16,139 @@
         <li><a href="howtoimagedrop.html"> Image Drop </a></li>
   </ul>
     
+<style>
+    div{
+        border:10px black;
+        background-color: #ADFF2F;
+        padding: 10px 10px 10px 10px;
+    }
+</style>
+    
+    <style>
+    body {
+      background-image: url(http://www.freebiesgallery.com/wp-content/uploads/2013/08/light-blue-background-5.jpg);
+      background-size:1400px;
+      color:black;
+    }
+</style>
     
 </head>
 <body style="text-align:center">
     
 <h1>How To Do A Dropdown When You Click On An Image?</h1>
 
+<div>
 <p>Ever wonder how did the text appeared and and then disappeared when you click on the image in the 'Which Sport is Better?'
-page? I'll will show how to do it and how it works inside the coding.</p>
+page? In this page I'm going to explain how I made this and explaining how the variables, fuctions, and everything else that
+works behind the coding.</p>
+</div>    
     
 <h2>The Whole Coding</h2>
+<img src="images/imagedrop1.png"></img>
+<img src="images/imagedrop2.png"></img>
 
-<h2>Explaing the HTML File</h2>
+<div>
+<p>This right here is the coding behind the Dropdown.  I'll will show how to do it and how it works inside the coding. 
+I'll explain it later, but for now I'm going to introduce you what I did. </p>
+</div>
 
-<h2>Explaing the Javascript File</h2>
+<h2>What I have created?</h2>
+<img height="300" width="500" src="https://cdn-images-1.medium.com/max/1600/1*uPbImdJ2DO-hd1aj5Tbfdw.gif"></img>
+<div>
+<p>What I created in the "Which Sport Is Better?' project, is when you click on the image (of which ever sport you wantet to 
+learn from) the information of the sport pops down from the image. When you click on the image again, the information disappers
+and hides behind the image. I wanted to do this because it was a easy, but not simple, thing to do. I chose to do sports for 
+my topic because sports is life for me. Without sports, I woutldn't be me right now. Sports are my hobbies. I chose four sports,
+between them are soccer, basketball, hockey, and baseball. I had to find out which sport is better than the others. By doing
+this I typed what the sport is about, how it connects me, the rules of the game, and the pros and cons. When you click on the image 
+the information of what I said in the last sentece will pop, at the bottom of the image. Click the image again, the information 
+of the sport will disapear.</p>
+</div>
 
-<h2>An Example of the Image Dropdown</h2>
-    
+<h2>What Is a Dropdown?</h2>
+
+<img height="300" width="500" src="https://d13yacurqjgara.cloudfront.net/users/10354/screenshots/984290/untitled-3.gif"></img>
+
+<div>
+<p>You are asking yourself, what is a dropdown? A dropdown is a list or items, or words, that appear when clicking on a 
+button,text, or image. When you click on the image a dropdown will appear at the bottom of the image with information.</p>
+</div>
+
+<h2>How Does the Image Dropdown Work?</h2>
+
+<div>
+<p>To do the dropdown when you click on the image, you need two files: the HTML file and the Javascript file.</p>
+
+<h3>HTML File</h3>
+
+<img height="300" width="500" src="images/imagedrophtml.png"></img>
+
+<p>In the HTML file, you have to start with putting your Id's. An id for you guys who don't know is the an is is an 
+artibute specifies an unique id for a HTML element (the value must be unique within the HTML document). The id attribute is
+most used to point a style in a style sheet, and by Javascript (via the HTML document) to manipulate the element with the specific 
+id. For the downdrop to work, you need an id for both the image you going to click on and the information you want to type about 
+your topic so it will been shown at the bottom of the image when you click it and disapear when you click it again. For example,
+my id's for the dropdown was (I am going to include the soccer dropdown): for the image it was 'id="soccerpic"' and for the 
+inforamtion about soccer, 'id="soccerInfo"'. This tells that in the Javascript file, where to find that id to do what part.
+Also on the information , I used 'display:"none"' because when the the page loads, I don't want the information to appear. You
+have to click on the image to see the information. Everytime you reload the page, the inforamation of the sport won't appear,
+until you click on the image. Even when you click on the image and the text appear at the bottom, when you refresh the page
+or  go in again, the text (information) won't appear.You also need the format "div" to make what information you want to put 
+inside the div. The div is the id for the dropdwon to appear and disappear when you click on the image.</p>
+
+<h3>Javascript File</h3>
+
+<img height="300" width="500" src="images/imagedrop1.png"></img>
+
+<p>Now lets talk about the Javascript file. As you see in the Images on the top of the page, there are many unifamiliar things you
+won't get. Lets talk about the first part of the code to do the dropdown. As you see, there is var, which is variables for 
+short in programing. Variables declarations are processed before any code is execued. Variables can be thought of named containers.
+You can place data into these containers and then refer to the data simply naming the container. Once again I'm going to use 
+the Soccer Dropdown as my example. As you see there are two variables for the soccer dropdown: 'var soccerInfo' and 'var 
+'soccerpic'. Now the other part of the code is the '= document.getElementbyId()'. This makes the id from the HTML file transfer
+to the Javascript file where variable in gets the id. For example my code was 'var soccerInfo = getElementbyId("soccerInfo").
+So the soccer information is grabbed to do a function. I did the same thing for soccer image. We are now going to explain the middle and bottom of the code of the 
+dropdown. Now you see the code 'soccerpic.addEventListener('click', function()' The addEventListener attach an event, for this instense
+clicking on the image, handler to an element, so that you can do something useful when an even is triggered. In this code we have 
+an if else statement. This if else statement is when the webpage is open, the display will be none (for the text(information))
+When you click on the image, the if statement says to turn the style of display fron "none" to "block" where the text is shown
+at the bottom of the image. Block makes the display to appear. The else statement is if "block" is shown and the image is clicked,
+display "none" again. </p>
+
+</div>
+
+<h2>Reflection</h2>
+
+<img height="300" width="500" src="https://rhetoricsection0003.files.wordpress.com/2016/05/reflection-s1llcr11.jpg"></img>
+
+<div>
+<p>Doing this project was kinda hard but kinda easy at the same time. At first doing it, I didn't understand what to do.
+I didn't know where to start. I had a rough start. The HTML file was the easiest thing to do in this project. Cause of course,
+HTML is the easiest to learn. At first, I just putted the navbar, images, and information of each sport. Later on, I included
+the background of the page and the color and font of the words. Oh yeah, and the border and padding. Now I was stuck in the
+ Javascript part. For one hour I was just staring at the screen and listieng to music. Then I asked Mr.Hesby for some help.
+ I owe Mr.Hesby, because he helped me a lot and helped me understand more about computer science. He helped me on to put ids 
+ in the HTML file then to do the variables to transfer the id to the Javascript file. How addEventListener makes the fuctions
+ works. How to put everything in the center of the page and not in the left ot right. Many many more things I could say, but 
+ it would be a long and very boring paragraph to do. At first, I thought it was going be hard and boring. But oh boy, Mr.Hesby
+ proved me wrong. Now, I understand the concepts of computer science. It is easy and fun to program stuff. Thank you, Mr. Hesby!!!
+</p>
+</div>
+
+<h2>Example Of An Image Dropdown</h2>
+
+<h4>Psssssssss!!! Click On The Image!!!</h4>
+
+<img id="examplepic" src="http://1.bp.blogspot.com/-oK0jAju6p-U/U72wNMrWDyI/AAAAAAAAAl8/xlNq2jLV0D0/s1600/Robben.jpg"></img>
+
+<div style = "display:none;" id="exampleInfo">
+    <h1>This Is An Example Of An Image Dropdown</h1>
+    <h2>You Can Put Any Type Of Text Here</h2>
+    <p>Hope You Learned Something New!!!</p>
+</div>
+
+<script type="text/javascript" src="howtoimagedrop.js"></script>
+
 </body>
 </html>
 
